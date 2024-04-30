@@ -1,0 +1,37 @@
+
+Game: Snakes and Ladders
+GUI Elements: Player Names, Player Pieces, Game Board, Roll Dice Button, Labels for the spots on the game board, etc.
+Interactivity: Write player names, click roll dice button, etc.
+
+Make a 2D array for the gameboard coordinates
+Make a 2D array for the gameboard spots coordinates
+Make a class for a player: player position, color, shape, name
+Make a class for the roll dice button: random number generator when pressing button, returns int
+Make a class for the gameboard graphics: 2 colors, snakes locations, ladder locations
+Make a class for the snakes (a line): start pos, end pos, color, etc.
+Make a class for the ladders (a line): start pos, end pos, color, etc.
+
+On start:
+	make users choose their characters (color, shape, name)
+	initialize the gameboard, ladders, snakes, etc. and update the graphics
+	make all players start at first square
+	
+
+On roll dice:
+	return int
+
+After roll dice:
+	take the int and move the player by that many spots, make the player graphics also move to the correct coordinates
+	if player square > final square square (100):
+		move player back to square 99
+	if int is 6:
+		let player roll again
+	else:
+		change turn to the next player
+	update the graphics
+
+On player reaching the last square:
+	end game
+	show winner screen with the winning player on a podium
+	replay button
+
