@@ -60,7 +60,7 @@ public class StartMenu extends JFrame implements ActionListener{
 
 		// SET UP AND ADD THE PLAY BUTTON
 		playButton.setFont(new Font("Serif", Font.PLAIN, 40));
-		playButton.setBounds((700 - playButton.getPreferredSize().width) / 2, title.getPreferredSize().height + subTitle.getPreferredSize().height + image.getPreferredSize().height + 25, playButton.getPreferredSize().width, playButton.getPreferredSize().height);
+		playButton.setBounds((700 - playButton.getPreferredSize().width) / 2 - 25, title.getPreferredSize().height + subTitle.getPreferredSize().height + image.getPreferredSize().height + 25, playButton.getPreferredSize().width + 50, playButton.getPreferredSize().height);
 		playButton.setBackground(new Color(23, 23, 56));
 		playButton.setForeground(Color.WHITE);
 		startMenuPanel.add(playButton);

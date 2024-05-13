@@ -26,8 +26,8 @@ public class PlayerPanel extends JPanel implements  MouseListener{
         // ADD ICONS TO PANEL
         playerPanel.setLayout(null);
 		setUpPlayerIcons(player1Icon, player2Icon);
-		player1Icon.setBounds(0, 0, 30, 30);
-		player2Icon.setBounds(0, 0, 30, 30);
+		player1Icon.setBounds(0, 0, player1Icon.getPreferredSize().width, 30);
+		player2Icon.setBounds(0, 0, player2Icon.getPreferredSize().width, 30);
 		playerPanel.add(player1Icon);
 		playerPanel.add(player2Icon);
 		player1Icon.setLocation(10, 500);
@@ -88,10 +88,10 @@ public class PlayerPanel extends JPanel implements  MouseListener{
 	public void updatePlayerPosition(int player){
         // MOVE PLAYER TO THE MOUSE CURSOR'S LOCATION
 		if(player == 1){
-			player1Icon.setLocation(newX - player1Icon.getPreferredSize().width / 2, newY - player1Icon.getPreferredSize().height / 2);
+			player1Icon.setLocation(newX - player1Icon.getPreferredSize().width / 2, newY - 15);
 		}
 		if(player == 2){
-			player2Icon.setLocation(newX - player2Icon.getPreferredSize().width / 2, newY - player2Icon.getPreferredSize().height / 2);
+			player2Icon.setLocation(newX - player2Icon.getPreferredSize().width / 2, newY - 15);
 		}
 	}
     public void setTurn(){
